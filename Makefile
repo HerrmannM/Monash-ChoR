@@ -3,12 +3,12 @@ newDate=$(shell date +%Y-%m-%d)
 rPackageVersion=$(shell grep "Version:" ./$(rPackageName)/DESCRIPTION | cut -c1-9 --complement)
 
 check: cpjar roxy
-	R CMD build $(rPackageName)
-	R CMD check $(rPackageName)_$(rPackageVersion).tar.gz --as-cran
+	R-devel CMD build $(rPackageName)
+	R-devel CMD check $(rPackageName)_$(rPackageVersion).tar.gz --as-cran
 
 install: cpjar roxy
-	R CMD build $(rPackageName)
-	R CMD INSTALL $(rPackageName)_$(rPackageVersion).tar.gz
+	R-devel CMD build $(rPackageName)
+	R-devel CMD INSTALL $(rPackageName)_$(rPackageVersion).tar.gz
 
 roxy:
 	rm -f ./$(rPackageName)/man/*.Rd
