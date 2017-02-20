@@ -10,9 +10,11 @@
 
 # Output files from R CMD build
 /*.tar.gz
+ChoR_*.tar.gz
 
 # Output files from R CMD check
 /*.Rcheck/
+ChoR.Rcheck/
 
 # RStudio files
 .Rproj.user/
@@ -31,3 +33,9 @@ vignettes/*.pdf
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
+
+# Roxygen
+tmp_roxy.R
+tmp_roxy.Rout
+ChoR/NAMESPACE
+ChoR/man/

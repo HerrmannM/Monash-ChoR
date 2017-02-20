@@ -1,0 +1,52 @@
+citHeader("To cite choRe in publications use:")
+
+citation(auto = meta)
+
+citEntry(
+  entry         = "InProceedings",
+  title         = "A multiple test correction for streams and cascades of statistical hypothesis tests",
+  author        = personList(as.person("Geoffrey I. Webb"), as.person("François Petitjean")),
+  booktitle     = "ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+  year          = "2016",
+  pages         = "1225--1264",
+  textVersion   = paste("Geoffrey I. Webb and François Petitjean (2016).",
+                        "A multiple test correction for streams and cascades of statistical hypothesis tests.",
+                        "ACM SIGKDD International Conference on Knowledge Discovery and Data Mining: 1--10.")
+)
+
+citEntry(
+  entry         = "InProceedings",
+  title         = "Scaling log-linear analysis to datasets with thousands of variables",
+  author        = personList(as.person("François Petitjean"), as.person("Geoffrey I. Webb")),
+  booktitle       = "ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+  year          = "2015",
+  pages         = "469--477",
+  textVersion   = paste("François Petitjean and Geoffrey I. Webb (2015).",
+                        "Scaling log-linear analysis to datasets with thousands of variables.",
+                        "ACM SIGKDD International Conference on Knowledge Discovery and Data Mining: 469--477.")
+)
+
+citEntry(
+  entry         = "InProceedings",
+  title         = "A statistically efficient and scalable method for log-linear analysis of high-dimensional data",
+  author        = personList(as.person("François Petitjean"), as.person("Allison Lloyd"), as.person("Geoffrey I. Webb"), as.person("Ann E. Nicholson")),
+  booktitle       = "IEEE International Conference on Data Mining",
+  year          = "2014",
+  pages         = "480--489",
+  textVersion   = paste("François Petitjean and Allison Lloyd and Geoffrey I. Webb and Ann E. Nicholson (2014).",
+                        "A statistically efficient and scalable method for log-linear analysis of high-dimensional data.",
+                        "IEEE International Conference on Data Mining: 480--489.")
+)
+
+citEntry(
+  entry         = "InProceedings",
+  title         = "Scaling log-linear analysis to high-dimensional data",
+  author        = personList(as.person("François Petitjean"), as.person("Geoffrey I. Webb"), as.person("Ann E. Nicholson")),
+  booktitle       = "IEEE International Conference on Data Mining",
+  year          = "2013",
+  pages         = "597--606",
+  textVersion   = paste("François Petitjean and Geoffrey I. Webb and Ann E. Nicholson (2013).",
+                        "Scaling log-linear analysis to high-dimensional data.",
+                        "IEEE International Conference on Data Mining: 597--606.")
+)
+

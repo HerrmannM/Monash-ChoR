@@ -1,0 +1,25 @@
+Package: ChoR
+Title: Chordalysis R Package
+Version: 0.0-1
+Date: 2017-02-20
+Authors@R: c(
+  person(given = "François",  family = "Petitjean", role = "aut"),
+  person(given = "Matthieu",  family = "Herrmann",  role = c("aut", "com", "cre"), email = "matthieu.herrmann@monash.edu"),
+  person(given = "Christoph", family = "Bergmeir",  role = c("ctb"))  )
+Description:
+    Learning the structure of graphical models from datasets with thousands of variables.
+    More information about the research papers detailing the theory behind Chordalysis is available at
+    <http://www.francois-petitjean.com/Research> (KDD 2016, SDM 2015, ICDM 2014, ICDM 2013).
+Imports:
+  rJava (>= 0.9.8),
+  stats
+Suggests:
+  graph (>= 1.52.0),
+  Rgraphviz (>= 2.18.0)
+SystemRequirements:
+  Java (>= 1.8)
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+LazyData: true
