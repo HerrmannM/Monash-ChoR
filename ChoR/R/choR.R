@@ -17,7 +17,6 @@
 #' @param x A dataframe with categorical data; column names are the name of the attributes.
 #' @param card A vectore containing the cardinality of the attributes (position wise).
 #' @return A list how two .jarray references (one for the dimension, one for the data) and the dataframe
-#' @import rJava
 ChoR.loadData <- function(x, card=NULL){
 
   # --- 1: Check for missing values and format

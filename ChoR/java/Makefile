@@ -11,5 +11,5 @@ all: compile jar
 clean:
 	rm -rf bin
 
-propper:clean
+proper:clean
 	rm -f choR.jar
