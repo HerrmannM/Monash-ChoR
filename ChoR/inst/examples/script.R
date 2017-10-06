@@ -55,32 +55,6 @@ if(requireNamespace("graph", quietly=TRUE)){
 }
 
 
-###### Solar flare #####
-SF.data =
-  read.csv( # "https://archive.ics.uci.edu/ml/machine-learning-databases/solar-flare/flare.data2",
-            "https://raw.githubusercontent.com/jeffheaton/proben1/master/flare/flare.data2",
-            sep               = "",       # White spaces
-            skip              = 1,
-            header            = FALSE,
-            stringsAsFactors  = FALSE,
-            check.names       = TRUE
-          )
-
-# Remove last 3 columns (classes, not attributes)
-SF.data = SF.data[-11:-13]
-# Give meaningful names
-colnames(SF.data) = c(  "ClassCode", "LSpotSizeCode", "DistCode", "Activity",
-                        "Evolution", "PrevActivity", "HistoricallyComplex", "BecomeComplex",
-                        "Area", "AreaLSpot")
-# Chordalysis
-SF.res = ChoR.SMT(SF.data, card = c(7, 6, 4, 2, 3, 3, 2, 2, 2, 2))
-
-if(requireNamespace("graph", quietly=TRUE)){
-  SF.gr = ChoR.as.graph(SF.res)
-  printGraph(SF.gr)
-}
-
-
 
 ###### Titanic #####
 T.data =
@@ -99,3 +73,31 @@ if(requireNamespace("graph", quietly=TRUE)){
   T.gr = ChoR.as.graph(T.res)
   printGraph(T.gr)
 }
+
+
+
+####### Solar flare #####
+#SF.data =
+#  read.csv( # "https://archive.ics.uci.edu/ml/machine-learning-databases/solar-flare/flare.data2",
+#            "https://raw.githubusercontent.com/jeffheaton/proben1/master/flare/flare.data2",
+#            sep               = "",       # White spaces
+#            skip              = 1,
+#            header            = FALSE,
+#            stringsAsFactors  = FALSE,
+#            check.names       = TRUE
+#          )
+#
+## Remove last 3 columns (classes, not attributes)
+#SF.data = SF.data[-11:-13]
+## Give meaningful names
+#colnames(SF.data) = c(  "ClassCode", "LSpotSizeCode", "DistCode", "Activity",
+#                        "Evolution", "PrevActivity", "HistoricallyComplex", "BecomeComplex",
+#                        "Area", "AreaLSpot")
+## Chordalysis
+#SF.res = ChoR.SMT(SF.data, card = c(7, 6, 4, 2, 3, 3, 2, 2, 2, 2))
+#
+#if(requireNamespace("graph", quietly=TRUE)){
+#  SF.gr = ChoR.as.graph(SF.res)
+#  printGraph(SF.gr)
+#}
+#
