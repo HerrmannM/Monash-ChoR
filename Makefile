@@ -36,6 +36,7 @@ cpjar: ./ChoR/java/choR.jar
 proper:
 	rm -rf $(rPackageName)_$(rPackageVersion).tar.gz $(rPackageName).Rcheck
 	rm -rf ./$(rPackageName)/man/*.Rd
+	rm -rf ./$(rPackageName)/NAMESPACE
 	rm -rf ./tmp_roxy.R ./tmp_roxy.Rout
 	rm -rf .RData
 	rm -rf ./$(rPackageName)/inst/java

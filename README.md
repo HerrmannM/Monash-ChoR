@@ -6,6 +6,9 @@ developed at Monash University, Melbourne, Australia
 
 ## Changelog
 
+### 2017-10-13
+* Updated rJava to 0.9-9
+
 ### 2017-10-06
 * Update Chordalysis jar 2017-07-10
 * Replace Apache Commons Mathematics by https://cran.r-project.org/package=commonsMath

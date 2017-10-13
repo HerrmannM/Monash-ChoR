@@ -1,7 +1,7 @@
 Package: ChoR
 Title: Chordalysis R Package
-Version: 0.0-2
-Date: 2017-10-06
+Version: 0.0-3
+Date: 2017-10-13
 Authors@R: c(
   person(given = "François",  family = "Petitjean", role = "aut"),
   person(given = "Matthieu",  family = "Herrmann",  role = c("aut", "com", "cre"), email = "matthieu.herrmann@monash.edu"),
@@ -12,7 +12,7 @@ Description:
     <http://www.francois-petitjean.com/Research> (KDD 2016, SDM 2015, ICDM 2014, ICDM 2013).
     The R package development site is <https://github.com/HerrmannM/Monash-ChoR>.
 Imports:
-  rJava (>= 0.9.8),
+  rJava (>= 0.9.9),
   commonsMath,
   stats
 Suggests:
