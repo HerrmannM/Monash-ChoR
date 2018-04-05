@@ -4,10 +4,11 @@
 options( java.parameters = "-Xmx4g" )
 library(ChoR)
 
-## Test JAVA version
-jv <- rJava::.jcall("java/lang/System", "S", "getProperty", "java.runtime.version")
-jvn <- as.numeric(paste0(strsplit(jv, "[.]")[[1L]][1:2], collapse = "."))
-if(jvn < 1.8){ stop("Java 8 is needed for this package but not available") }
+### Test JAVA version
+# Java test moved into onLoad
+#jv <- rJava::.jcall("java/lang/System", "S", "getProperty", "java.runtime.version")
+#jvn <- as.numeric(paste0(strsplit(jv, "[.]")[[1L]][1:2], collapse = "."))
+#if(jvn < 1.8){ stop("Java 8 is needed for this package but not available") }
 
 # Helper function for graph printing. Require Rgraphviz:
 # source("https://bioconductor.org/biocLite.R")
@@ -23,7 +24,8 @@ printGraph = function(x){
 ###### MUSHROOM #####
 # We read the data from internet: http://repository.seasr.org/Datasets/UCI/csv/mushroom.csv
 MR.data =
-  read.csv(  "http://repository.seasr.org/Datasets/UCI/csv/mushroom.csv",
+  read.csv(  # "http://repository.seasr.org/Datasets/UCI/csv/mushroom.csv",   # Forever Dead link ?
+              "https://raw.githubusercontent.com/stedy/Machine-Learning-with-R-datasets/master/mushrooms.csv",
               header            = TRUE,             # Here, we have a header
               na.strings        = c("NA","?",""),   # Configure the missing values
               stringsAsFactors  = FALSE,            # Keep strings for now

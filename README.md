@@ -6,6 +6,9 @@ developed at Monash University, Melbourne, Australia
 
 ## Changelog
 
+### 2018-04-05
+* Updated java requirement en checking
+
 ### 2017-10-13
 * Updated rJava to 0.9-9
 
@@ -43,6 +46,13 @@ If you need more memory for Java, use the following R line **before** loading a 
 ```R
 options( java.parameters = "-Xmx4g" )
 ```
+
+### Installation of other useful software
+```R
+install.packages('Rcpp')
+install.packages('roxygen2')
+```
+
 
 ### Example
 See the `ChoR/inst/examples/script.R` for some examples.

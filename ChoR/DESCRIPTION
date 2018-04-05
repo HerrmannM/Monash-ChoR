@@ -1,7 +1,7 @@
 Package: ChoR
 Title: Chordalysis R Package
-Version: 0.0-3
-Date: 2017-11-16
+Version: 0.0-4
+Date: 2018-04-05
 Authors@R: c(
   person(given = "François",  family = "Petitjean", role = "aut"),
   person(given = "Matthieu",  family = "Herrmann",  role = c("aut", "com", "cre"), email = "matthieu.herrmann@monash.edu"),
@@ -19,7 +19,7 @@ Suggests:
   graph (>= 1.52.0),
   Rgraphviz (>= 2.18.0)
 SystemRequirements:
-  Java (>= 1.8)
+  Java (>= 8)
 License: GPL-3
 Encoding: UTF-8
 RoxygenNote: 6.0.1
