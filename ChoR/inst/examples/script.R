@@ -22,10 +22,17 @@ printGraph = function(x){
 
 
 ###### MUSHROOM #####
-# We read the data from internet: http://repository.seasr.org/Datasets/UCI/csv/mushroom.csv
+# We read the data from internet:
+# http://repository.seasr.org/Datasets/UCI/csv/mushroom.csv
+# # Forever Dead link ?
+# MR.url = paste( "https://raw.githubusercontent.com/stedy/",
+#                 "Machine-Learning-with-R-datasets/master/mushrooms.csv", sep="")
+
+MR.url = system.file("extdata", "mushrooms.csv", package = "ChoR", mustWork = TRUE)
+
 MR.data =
-  read.csv(  # "http://repository.seasr.org/Datasets/UCI/csv/mushroom.csv",   # Forever Dead link ?
-              "https://raw.githubusercontent.com/stedy/Machine-Learning-with-R-datasets/master/mushrooms.csv",
+  read.csv(
+              MR.url,
               header            = TRUE,             # Here, we have a header
               na.strings        = c("NA","?",""),   # Configure the missing values
               stringsAsFactors  = FALSE,            # Keep strings for now
@@ -59,8 +66,13 @@ if(requireNamespace("graph", quietly=TRUE)){
 
 
 ###### Titanic #####
+# From "https://ww2.amstat.org/publications/jse/datasets/titanic.dat.txt"
+# Fallback on local file
+
+MR.url = system.file("extdata", "titanic.dat.txt", package = "ChoR", mustWork = TRUE)
+
 T.data =
-  read.csv( "https://ww2.amstat.org/publications/jse/datasets/titanic.dat.txt",
+  read.csv( MR.url,
             sep               = "",       # White spaces
             header            = FALSE,
             stringsAsFactors  = FALSE

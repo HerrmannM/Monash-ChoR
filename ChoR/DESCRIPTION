@@ -1,7 +1,7 @@
 Package: ChoR
 Title: Chordalysis R Package
 Version: 0.0-4
-Date: 2018-04-05
+Date: 2018-05-03
 Authors@R: c(
   person(given = "François",  family = "Petitjean", role = "aut"),
   person(given = "Matthieu",  family = "Herrmann",  role = c("aut", "com", "cre"), email = "matthieu.herrmann@monash.edu"),
